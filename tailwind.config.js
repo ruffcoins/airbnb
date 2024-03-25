@@ -19,6 +19,7 @@ export const theme = {
 	},
 	extend: {
 		colors: {
+			airGrey: "#F3F3F2",
 			border: "hsl(var(--border))",
 			input: "hsl(var(--input))",
 			ring: "hsl(var(--ring))",
