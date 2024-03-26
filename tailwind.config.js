@@ -18,6 +18,9 @@ export const theme = {
 		},
 	},
 	extend: {
+		transitionProperty: {
+			"width": "width",
+		},
 		colors: {
 			airGrey: "#F3F3F2",
 			border: "hsl(var(--border))",
