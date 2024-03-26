@@ -1,5 +1,5 @@
 import { placeType, roomBedBaths } from "@/constants/data";
-import { Checkbox } from "@radix-ui/react-checkbox";
+import { Checkbox } from "./ui/checkbox";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 
@@ -10,9 +10,10 @@ interface filterSheetProps {
 
 const FilterSheet: React.FC<filterSheetProps> = ({ showFilter, setShowFilter }) => {
 	return (
-		<><div id="filter-sheet" className="fixed inset-0 bg-black bg-opacity-0 z-10 overflow-hidden"
-			onClick={() => setShowFilter(false)}></div>
-			<div className={`flex flex-col justify-between w-[400px] transition-width ${showFilter ? "right-0 lg:h-[75.5%] xl:h-[81.5%] 2xl:h-[85%]" : "-right-[5000px] h-0"} border absolute right-0 top-0 bottom-0 bg-white shadow-2xl z-20 `} style={{
+		<>
+			<div id="filter-sheet" className="fixed inset-0 bg-black bg-opacity-0 z-10 overflow-hidden"
+				onClick={() => setShowFilter(false)}></div>
+			<div className={`flex flex-col justify-between w-[400px] transition-width ${showFilter ? "right-0 lg:h-[75.5%] xl:h-[81.5%] 2xl:h-[85%]" : "-right-[5000px] h-0"} border fixed right-0 bottom-0 bg-white shadow-2xl z-20 `} style={{
 				transitionDuration: "1000ms",
 				msTransitionDuration: "1000ms",
 				animationDuration: "1000ms"
@@ -93,9 +94,10 @@ const FilterSheet: React.FC<filterSheetProps> = ({ showFilter, setShowFilter }) 
 				</div>
 
 				<div className="p-6 border-t shadow-lg">
-					<Button disabled className="rounded-xl sticky bottom-0 w-full bg-[#C72F63]/50 py-6 font-normal">Show 836 Homes</Button>
+					<Button disabled className="rounded-xl sticky bottom-0 w-full bg-[#C72F63]/50 py-6 font-normal cursor-not-allowed">Show 836 Homes</Button>
 				</div>
-			</div></>
+			</div>
+		</>
 	);
 };
 export default FilterSheet;
