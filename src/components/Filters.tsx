@@ -52,24 +52,6 @@ const Filters = ({ toggleFilter }: { toggleFilter: () => void }) => {
 				>
 					<img src={FilterIcon} alt="filter" className="w-4" />
 				</div>
-
-				{/* <Sheet>
-				<SheetTrigger>
-					<div className="bg-airGrey p-4 rounded-lg cursor-pointer">
-						<img src={FilterIcon} alt="filter" className="w-4" />
-					</div>
-				</SheetTrigger>
-				<SheetContent className="">
-					<SheetHeader>
-						<SheetTitle>Are you absolutely sure?</SheetTitle>
-						<SheetDescription>
-							This action cannot be undone. This will permanently delete your account
-							and remove your data from our servers.
-						</SheetDescription>
-					</SheetHeader>
-				</SheetContent>
-			</Sheet> */}
-
 			</div>
 		</>
 

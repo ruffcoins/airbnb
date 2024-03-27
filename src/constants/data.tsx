@@ -43,7 +43,11 @@ export const properties = [
 		name: "Whitefish Estate",
 		location: "Whitefish, Montana, United States",
 		amount: "$10,000",
-		stars: "5.00"
+		stars: "5.00",
+		guests: "16+",
+		bedrooms: "8",
+		beds: "8",
+		baths: "8"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/afIWyPD7bAqXpOTuGYeO4FzrnU.webp",
@@ -55,19 +59,27 @@ export const properties = [
 		name: "Luxury stay in Weston, Saint James, Barbados",
 		location: "Weston, Saint James, Barbados",
 		amount: "$1,500",
-		stars: "5.00"
+		stars: "5.00",
+		guests: "8",
+		bedrooms: "4",
+		beds: "5",
+		baths: "4"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/wTSsHOfD0gXYkODZBWWWOfdkw.webp",
 		images: [
 			"https://framerusercontent.com/images/wTSsHOfD0gXYkODZBWWWOfdkw.webp",
 			"https://framerusercontent.com/images/wqIEfjRYn0UbT7uk0i5wpVndBQ.webp",
-			"https://framerusercontent.com/images/7d8JdJuuXTeM5XjBXGWdIr3RBEQ.jpeg.webp"
+			"https://framerusercontent.com/images/7d8JdJuuXTeM5XjBXGWdIr3RBEQ.jpeg"
 		],
 		name: "Numero 22 - Lake Como - Design Living & Lake View",
 		location: "Laglio, Lombardia, Italy",
 		amount: "$359",
-		stars: "4.99"
+		stars: "4.99",
+		guests: "6",
+		bedrooms: "2",
+		beds: "3",
+		baths: "3"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/3E8SIyOR9oYK20P1hy1BtAelgI.webp",
@@ -79,7 +91,11 @@ export const properties = [
 		name: "7,500 sq ft Private Beachfront Estate",
 		location: "Dubai, United Arab Emirates",
 		amount: "$2,478",
-		stars: "4.73"
+		stars: "4.73",
+		guests: "14",
+		bedrooms: "6",
+		beds: "11",
+		baths: "6.5"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/0RUEx3es60Z3CuB1eFkBxcPxmA.webp",
@@ -91,7 +107,11 @@ export const properties = [
 		name: "Bohemian & Spacious / Private Pool and Garden",
 		location: "Tulum, Quintana Roo, Mexico",
 		amount: "$199",
-		stars: "4.97"
+		stars: "4.97",
+		guests: "4",
+		bedrooms: "2",
+		beds: "2",
+		baths: "2.5"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/3fX1fjZlrzbcXKbTqPD7FpY4Z8.webp",
@@ -103,7 +123,11 @@ export const properties = [
 		name: "Designer A-Frame Cabin in the Trees",
 		location: "Lake Arrowhead, California, United States",
 		amount: "$225",
-		stars: "4.93"
+		stars: "4.93",
+		guests: "6",
+		bedrooms: "3",
+		beds: "4",
+		baths: "2"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/lIXcszNPyY7PC0yaVFg5TBtmfA.webp",
@@ -115,7 +139,11 @@ export const properties = [
 		name: "Fully Renovated 2 BR on River w/ Pool - Walk to To",
 		location: "Aspen, Colorado, United States",
 		amount: "$546",
-		stars: "5.00"
+		stars: "5.00",
+		guests: "6",
+		bedrooms: "2",
+		beds: "4",
+		baths: "2"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/ZEBw6ci9AF1cD4D1sFdPW3Mj5rE.webp",
@@ -127,7 +155,11 @@ export const properties = [
 		name: "Magnolia's Hillcrest Cottage",
 		location: "  Waco, Texas, United States",
 		amount: "$500",
-		stars: "4.97"
+		stars: "4.97",
+		guests: "2",
+		bedrooms: "1",
+		beds: "1",
+		baths: "1"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/WO8ADTYBrqd6BunOnEocxOAS7c.webp",
@@ -139,7 +171,11 @@ export const properties = [
 		name: "Unique Architecture Cave House by Cycladica",
 		location: "Oia, South Aegean, Greece",
 		amount: "$930",
-		stars: "4.95"
+		stars: "4.95",
+		guests: "4",
+		bedrooms: "2",
+		beds: "2",
+		baths: "1"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/XKmxgbyaDgBCY0OI7iczwdFvcU.webp",
@@ -151,7 +187,11 @@ export const properties = [
 		name: "ATELIER ArtVillas Costa Rica",
 		location: "Uvita, Osa, Puntaneras, Costa Rica",
 		amount: "$830",
-		stars: "4.80"
+		stars: "4.80",
+		guests: "6",
+		bedrooms: "3",
+		beds: "3",
+		baths: "2"
 	},
 	{
 		coverImage: "https://framerusercontent.com/images/cD0vsVdMfYV5dXwD5abiySgong.webp",
@@ -163,6 +203,10 @@ export const properties = [
 		name: "Mountainside Luxury Cabin with Batulao View",
 		location: "Calaca, Calabarzon, Philippines",
 		amount: "$483",
-		stars: "4.87"
+		stars: "4.87",
+		guests: "8",
+		bedrooms: "2",
+		beds: "3",
+		baths: "3"
 	},
 ];
