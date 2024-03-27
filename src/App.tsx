@@ -83,13 +83,13 @@ const App = () => {
 								<div className="grid grid-cols-8 gap-x-8 mt-4">
 
 									<div className="col-span-5 space-y-4">
-										<div className="flex items-start justify-between">
-											<div className="space-y-2">
+										<div className="items-start justify-between grid grid-cols-12">
+											<div className="space-y-2 col-span-10">
 												<h1 className="text-3xl font-medium">{property.name}</h1>
 												<p className="text-[#727271] font-light">{property.location}</p>
 											</div>
 
-											<div className="flex space-x-2">
+											<div className="flex space-x-2 col-span-2">
 												<div className=" bg-[#F5F5F4] p-3 rounded-full">
 													<img src={Share} alt="share icon" className="w-3" />
 												</div>
