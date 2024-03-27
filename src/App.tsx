@@ -54,7 +54,7 @@ const App = () => {
 			<Filter toggleFilter={toggleFilter} />
 			<div className="flex relative h-full">
 				<Sidebar />
-				<div className="flex-1 grid grid-cols-4 p-8 gap-x-6 gap-y-5">
+				<div className="flex-1 grid grid-cols-2 xl:grid-cols-4 p-8 gap-x-6 gap-y-5">
 					{properties.map((property) => (
 
 						<Sheet key={property.name}>
@@ -63,7 +63,7 @@ const App = () => {
 							</SheetTrigger>
 							<SheetContent className="px-8 overflow-y-scroll">
 								<div className="grid grid-cols-5 gap-x-4 mb-6">
-									<div className="col-span-3 rounded-2xl h-[505px] relative">
+									<div className="col-span-3 rounded-2xl relative">
 										<img src={property.images[0]} alt="cover image" className="w-full h-full object-cover rounded-2xl" />
 										<p className="shadow-inner absolute left-4 bottom-4 rounded-xl bg-white px-4 py-2 font-light text-sm cursor-pointer">View All Photos</p>
 									</div>
@@ -82,14 +82,14 @@ const App = () => {
 
 								<div className="grid grid-cols-8 gap-x-8 mt-4">
 
-									<div className="col-span-5 space-y-4">
-										<div className="items-start justify-between grid grid-cols-12">
-											<div className="space-y-2 col-span-10">
+									<div className="xl:col-span-5 col-span-4 space-y-4">
+										<div className="items-start justify-between grid xl:grid-cols-12 xl:grid-rows-1 grid-rows-2 space-y-4 xl:space-y-4">
+											<div className="space-y-2 col-span-12 xl:col-span-10">
 												<h1 className="text-3xl font-medium">{property.name}</h1>
 												<p className="text-[#727271] font-light">{property.location}</p>
 											</div>
 
-											<div className="flex space-x-2 col-span-2">
+											<div className="flex space-x-2 col-span-12 xl:col-span-2">
 												<div className=" bg-[#F5F5F4] p-3 rounded-full">
 													<img src={Share} alt="share icon" className="w-3" />
 												</div>
@@ -100,7 +100,7 @@ const App = () => {
 											</div>
 										</div>
 
-										<div className="flex space-x-10 items-center py-4">
+										<div className="flex flex-col xl:flex-row xl:space-x-10 space-y-6 xl:space-y-0 xl:items-center py-4">
 											<div className="flex space-x-2 items-center">
 												<img src={Guests} alt="guests icon" className="w-6 text-sm" />
 												<span className="font-light text-sm">{property.guests} guests</span>
@@ -125,7 +125,7 @@ const App = () => {
 										<hr className="w-full mx-auto flex justify-center" />
 
 										{/* What you get */}
-										<div className="grid grid-cols-3 space-x-4 py-5">
+										<div className="grid xl:grid-cols-3 xl:grid-rows-1 grid-rows-3 xl:space-x-4 space-y-6 xl:space-y-0 py-5">
 											<div className="flex flex-col space-y-2">
 												<img src={Workspace} alt="share icon" className="w-14" />
 												<p className="font-normal">Dedicated workspace</p>
@@ -165,7 +165,7 @@ const App = () => {
 										{/* Amenities */}
 										<div className="flex flex-col space-y-2 py-4">
 											<p className="text-lg font-medium my-4">What this place offers</p>
-											<div className="grid grid-cols-3 gap-6">
+											<div className="grid xl:grid-cols-3 grid-rows  gap-6">
 												<div className="flex space-x-2 items-center">
 													<img src={Guests} alt="guests icon" className="w-6 text-sm" />
 													<span className="font-light text-sm pr-8">Kitchen</span>
@@ -254,49 +254,49 @@ const App = () => {
 											<div className="flex justify-between">
 												<span className="text-sm">Cleanliness</span>
 												<div className="flex items-center space-x-2">
-													<Progress value={100} className="w-96" />
+													<Progress value={100} className="w-48 xl:w-80" />
 													<span className="font-light text-sm">5.0</span>
 												</div>
 											</div>
 											<div className="flex justify-between">
 												<span className="text-sm">Accuracy</span>
 												<div className="flex items-center space-x-2">
-													<Progress value={98} className="w-96" />
+													<Progress value={98} className="w-48 xl:w-80" />
 													<span className="font-light text-sm">4.9</span>
 												</div>
 											</div>
 											<div className="flex justify-between">
 												<span className="text-sm">Communication</span>
 												<div className="flex items-center space-x-2">
-													<Progress value={96} className="w-96" />
+													<Progress value={96} className="w-48 xl:w-80" />
 													<span className="font-light text-sm">4.8</span>
 												</div>
 											</div>
 											<div className="flex justify-between">
 												<span className="text-sm">Location</span>
 												<div className="flex items-center space-x-2">
-													<Progress value={96} className="w-96" />
+													<Progress value={96} className="w-48 xl:w-80" />
 													<span className="font-light text-sm">4.8</span>
 												</div>
 											</div>
 											<div className="flex justify-between">
 												<span className="text-sm">Check-in</span>
 												<div className="flex items-center space-x-2">
-													<Progress value={98} className="w-96" />
+													<Progress value={98} className="w-48 xl:w-80" />
 													<span className="font-light text-sm">4.9</span>
 												</div>
 											</div>
 											<div className="flex justify-between">
 												<span className="text-sm">Value</span>
 												<div className="flex items-center space-x-2">
-													<Progress value={84} className="w-96" />
+													<Progress value={84} className="w-48 xl:w-80" />
 													<span className="font-light text-sm">4.2</span>
 												</div>
 											</div>
 										</div>
 
 										{/* Customer Reviews */}
-										<div className="grid grid-cols-2 gap-4">
+										<div className="grid xl:grid-cols-2 grid-rows gap-4">
 											<div className="rounded-2xl p-6 border space-y-6">
 												<div className="flex space-x-4">
 													<img src="https://framerusercontent.com/images/l64WTbI604jxlY6dzS0UsF0k6TU.png" alt="reviews" className="w-12 h-12 rounded-full object-cover" />
@@ -371,8 +371,8 @@ const App = () => {
 										<div className="flex flex-col space-y-6 pt-4">
 											<p className="text-lg font-medium">Host</p>
 
-											<div className="flex items-center justify-between">
-												<div className="flex space-x-4">
+											<div className="flex xl:flex-row flex-col xl:items-center xl:justify-between space-y-6 xl:space-y-0">
+												<div className="flex xl:flex-row flex-col xl:space-x-4 space-y-4 xl:space-y-0">
 													<img src="https://framerusercontent.com/images/BJlejSA7m05FYSEDxGymG3qB2w.jpg?scale-down-to=512" alt="host" className="w-12 h-12 rounded-full object-cover" />
 
 													<div className="space-y-1">
@@ -381,12 +381,12 @@ const App = () => {
 													</div>
 												</div>
 
-												<p className="rounded-xl bg-white px-4 py-3 font-light text-sm cursor-pointer border border-black hover:border-[#c72f63]">Contact Host</p>
+												<p className="rounded-xl bg-white px-4 py-3 font-light text-sm cursor-pointer border border-black hover:border-[#c72f63] text-center">Contact Host</p>
 											</div>
 
 
 											<div className="space-y-2">
-												<div className="flex space-x-10 items-center py-4">
+												<div className="flex xl:space-x-10 space-x-4 items-center py-4">
 													<div className="flex space-x-2 items-center">
 														<img src={Star} alt="guests icon" className="w-4 text-sm" />
 														<span className="font-light text-sm">2,635 reviews</span>
@@ -412,7 +412,7 @@ const App = () => {
 										<p className="text-[#C72F63] font-medium text-sm py-4">View more</p>
 									</div>
 
-									<div className="col-span-3 sticky top-0 h-fit" style={{ position: "sticky", top: 0, zIndex: 4000 }}>
+									<div className="col-span-4 xl:col-span-3 sticky top-0 h-fit" style={{ position: "sticky", top: 0, zIndex: 4000 }}>
 										<div className="bg-[#F5F5F4] p-6 rounded-2xl">
 											<div className="flex justify-between">
 												<p className="text-[#000] text-sm font-light"><span className="text-black font-medium text-2xl">{property.amount}</span> / night</p>
