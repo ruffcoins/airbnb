@@ -13,7 +13,7 @@ const FilterSheet: React.FC<filterSheetProps> = ({ showFilter, setShowFilter }) 
 		<>
 			<div id="filter-sheet" className="fixed inset-0 bg-black bg-opacity-0 z-10 overflow-hidden"
 				onClick={() => setShowFilter(false)}></div>
-			<div className={`flex flex-col justify-between w-[400px] transition-width ${showFilter ? "right-0 lg:h-[75.5%] xl:h-[81.5%] 2xl:h-[85%]" : "-right-[5000px] h-0"} border fixed right-0 bottom-0 bg-white shadow-2xl z-20 `} style={{
+			<div className={`flex flex-col justify-between w-[400px] transition-width ${showFilter ? "right-0" : "-right-[5000px] h-0"} border fixed right-0 bottom-0 top-[145px] 2xl:top-[100px] bg-white shadow-2xl z-20 `} style={{
 				transitionDuration: "1000ms",
 				msTransitionDuration: "1000ms",
 				animationDuration: "1000ms"
@@ -94,7 +94,7 @@ const FilterSheet: React.FC<filterSheetProps> = ({ showFilter, setShowFilter }) 
 				</div>
 
 				<div className="p-6 border-t shadow-lg">
-					<Button disabled className="rounded-xl sticky bottom-0 w-full bg-[#C72F63]/50 py-6 font-normal cursor-not-allowed">Show 836 Homes</Button>
+					<Button disabled className="rounded-xl sticky bottom-0 w-full bg-[#C72F63]/50 py-6 font-normal disabled:cursor-not-allowed">Show 836 Homes</Button>
 				</div>
 			</div>
 		</>
